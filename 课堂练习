@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Sep  3 09:47:09 2020
+
+@author: tute
+"""
+
+list = []
+while True:
+    item = input("输入元素：")
+    if item == 'q':
+        break
+    else:
+        list.append(item)
+print(list)
