@@ -1,0 +1,37 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Sep  3 10:56:56 2020
+
+@author: tute
+"""
+
+nmae = ['A','B']
+a_scores = 0
+b_scores = 0
+while True:
+    nm = input("输入队名：")
+    sc = int(input("输入得分："))
+    if nm == 'A':
+            a_scores+=sc
+    elif nm == 'B':
+            b_scores+=sc
+    elif nm =="game over":
+            break  
+    else:
+            continue
+    aster = "A队得分：%d"%a_scores
+    bster = "B队得分：%d"%b_scores
+    print(aster)
+    print(bster)
+if a_scores > b_scores:
+    winner = "A"
+elif a_scores < b_scores:
+    winner = "B"
+else:
+    winner = "A and B"
+str = "比赛结束","Winner is %s" % winner
+print(str)
+
+        
+        
+        
